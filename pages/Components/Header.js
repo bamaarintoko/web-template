@@ -31,9 +31,21 @@ class Header extends Component {
                             <span className="menu_text" style={{ float: "left" }}>Tentang</span>
                         </Link>
                     </NavItem>
-                    <NavItem href='#'><span className="menu_text" style={{ float: "left" }}>Program Keahlian</span></NavItem>
-                    <NavItem href='/Pages/Home/page-home'><span className="menu_text" style={{ float: "left" }}>Berita</span></NavItem>
-                    <NavItem href={a}><span className="menu_text" style={{ float: "left" }}>Kegiatan</span></NavItem>
+                    <NavItem>
+                        <Link as="/program-keahlian" href='/pages/program_keahlian'>
+                            <span className="menu_text" style={{ float: "left" }}>Program Keahlian</span>
+                        </Link>
+                    </NavItem>
+                    <NavItem>
+                        <Link as="/berita" href='/pages/berita'>
+                            <span className="menu_text" style={{ float: "left" }}>Berita</span>
+                        </Link>
+                    </NavItem>
+                    <NavItem href={a}>
+                        <Link as="/kegiatan" href='/pages/kegiatan'>
+                            <span className="menu_text" style={{ float: "left" }}>Kegiatan</span>
+                        </Link>
+                    </NavItem>
                 </Navbar>
                 {/* <Link href="/">
                     <a style={linkStyle}>Home</a>

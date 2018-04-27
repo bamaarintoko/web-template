@@ -7,6 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node pages/server.js"
   },
+  "postcss": {
+    "plugins": {
+      "lost": {},
+      "postcss-easy-import": {
+        "prefix": "_"
+      },
+      "autoprefixer": {},
+      "pixrem": {}
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
