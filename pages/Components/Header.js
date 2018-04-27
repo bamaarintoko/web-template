@@ -1,28 +1,47 @@
 import React, { Component } from 'react';
 // import { connect } from 'react-redux';
-import {Navbar, NavItem,Icon} from "react-materialize";
+import Link from 'next/link'
+import { Navbar, NavItem, Icon } from "react-materialize";
 // import stylesheet from '../styles/b.css'
 function mapStateToProps(state) {
     return {
 
     };
 }
-
+const linkStyle = {
+    marginRight: 15
+}
+const a = "/pages/home"
 class Header extends Component {
     render() {
         return (
-            <Navbar fixed={true} brand={<span style={{marginLeft:10}} className="brand">MALAS<span style={{color:'#2196F3'}}>KODING</span></span>} style={{backgroundColor:'#212121'}} right>
+            <div>
+                <Navbar fixed={true} style={{ backgroundColor: '#212121' }} right>
 
-                <NavItem href='#'>
-                    <span className="menu_text" style={{float:"left"}}>Home</span>
-                </NavItem>
-                {/* <NavItem href='#' style={{position:'absolute',left:0}}>
-                    <img width={64} src={logo}/>
-                </NavItem> */}
-                <NavItem href='#'><span className="menu_text" style={{float:"left"}}>Our Team</span></NavItem>
-                <NavItem href='#'><span className="menu_text" style={{float:"left"}}>Our Story</span></NavItem>
-                <NavItem href='#'><span className="menu_text" style={{float:"left"}}>About</span></NavItem>
-            </Navbar>
+                    <NavItem>
+                        <Link as="/" href='/pages/home'>
+                            <span className="menu_text" style={{ float: "left" }}>Beranda</span>
+                        </Link>
+                    </NavItem>
+                    {/* <NavItem href='#' style={{position:'absolute',left:0}}>
+    <img width={64} src={logo}/>
+</NavItem> */}
+                    <NavItem>
+                        <Link as="/tentang" href='/pages/tentang'>
+                            <span className="menu_text" style={{ float: "left" }}>Tentang</span>
+                        </Link>
+                    </NavItem>
+                    <NavItem href='#'><span className="menu_text" style={{ float: "left" }}>Program Keahlian</span></NavItem>
+                    <NavItem href='/Pages/Home/page-home'><span className="menu_text" style={{ float: "left" }}>Berita</span></NavItem>
+                    <NavItem href={a}><span className="menu_text" style={{ float: "left" }}>Kegiatan</span></NavItem>
+                </Navbar>
+                {/* <Link href="/">
+                    <a style={linkStyle}>Home</a>
+                </Link>
+                <Link href="/Pages/Home/page-home">
+                    <a style={linkStyle}>About</a>
+                </Link> */}
+            </div>
         );
     }
 }
