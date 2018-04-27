@@ -4,11 +4,11 @@ import Link from 'next/link';
 import Layout from './Container/Content'
 import Header from "./Components/Header"
 const Index = (props) => {
-    console.log(props.children)
+    // console.log(props.children)
     return (
         <div>
             <Head>
-                <title>malaskoding.com</title>
+                <title>Web Template</title>
                 <meta name="viewport" content="width=device-width,initial-scale=1" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="http://malaskoding.com/" />
@@ -25,7 +25,7 @@ const Index = (props) => {
             <Header />
             {props.children}
             <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
         </div>
     )
 }
