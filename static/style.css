@@ -7,6 +7,25 @@
 	background-color: '#FFFFFF';
 }
 .child_ {
-	width: 70%;
+	width: 80%;
 	margin: auto;
 }
+
+@media only screen and (max-width: 640px) {
+    .child_ {
+      width: 100%;
+      margin: auto;
+      }
+      .about_below {
+          background-color: 'black';
+          height:60vh;
+      }
+      .story_below {
+          margin-top: 200px;
+          background-color: '#FFFFFF';
+          height:50vh;
+      }
+      .story_top {
+          background-color: '#FFFFFF';
+      }
+  }
