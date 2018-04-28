@@ -10,6 +10,12 @@
 	width: 80%;
 	margin: auto;
 }
+._card {
+    border-color: aqua;
+    border-style: solid;
+      border-width: 1px;
+      padding: 10px;
+  }
 
 @media only screen and (max-width: 640px) {
     .child_ {
