@@ -2,3 +2,12 @@
 #sidenav-overlay { z-index: 1; }
 #sidenav-overlay { left: 300px; }
 .navbar-fixed { z-index: 999; }
+
+.story_top {
+	background-color: '#FFFFFF';
+	height:50vh;
+}
+.child_ {
+	width: 70%;
+	margin: auto;
+}
