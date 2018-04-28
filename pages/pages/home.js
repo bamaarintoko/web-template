@@ -67,6 +67,56 @@ export default () => (
                             </Card>
                 </Col>
             </Row>
+            <Row className="child_">
+                <Col m={12} s={12}>
+                    <div style={{ borderBottom: '1px solid #FF9800' }}>
+                        <h4>Berita Utama</h4>
+                    </div>
+                </Col>
+                <Col m={4} s={12} style={{ borderBottomWidth: 1, borderBottomColor: 'black' }}>
+                    <Card className='blue-grey darken-1' textClassName='white-text' title='Card title'
+                        actions={[<a href='#'>This is a link</a>]}>
+                        I am a very simple card.
+                            </Card>
+                </Col>
+                <Col m={4} s={12} style={{ borderBottomWidth: 1, borderBottomColor: 'black' }}>
+                    <Card className='blue-grey darken-1' textClassName='white-text' title='Card title'
+                        actions={[<a href='#'>This is a link</a>]}>
+                        I am a very simple card.
+                            </Card>
+                </Col>
+                <Col m={4} s={12} style={{ borderBottomWidth: 1, borderBottomColor: 'black' }}>
+                    <Card className='blue-grey darken-1' textClassName='white-text' title='Card title'
+                        actions={[<a href='#'>This is a link</a>]}>
+                        I am a very simple card.
+                            </Card>
+                </Col>
+            </Row>
+            <Row className="child_">
+                <Col m={12} s={12}>
+                    <div style={{ borderBottom: '1px solid #FF9800' }}>
+                        <h4>Kegiatan</h4>
+                    </div>
+                </Col>
+                <Col m={4} s={12} style={{ borderBottomWidth: 1, borderBottomColor: 'black' }}>
+                    <Card className='blue-grey darken-1' textClassName='white-text' title='Card title'
+                        actions={[<a href='#'>This is a link</a>]}>
+                        I am a very simple card.
+                            </Card>
+                </Col>
+                <Col m={4} s={12}>
+                    <Card className='blue-grey darken-1' textClassName='white-text' title='Card title'
+                        actions={[<a href='#'>This is a link</a>]}>
+                        I am a very simple card.
+                            </Card>
+                </Col>
+                <Col m={4} s={12} style={{ borderBottomWidth: 1, borderBottomColor: 'black' }}>
+                    <Card className='blue-grey darken-1' textClassName='white-text' title='Card title'
+                        actions={[<a href='#'>This is a link</a>]}>
+                        I am a very simple card.
+                            </Card>
+                </Col>
+            </Row>
         </Col>
         <Col m={12} s={12}>
             <Footer style={{ backgroundColor: '#757575' }} copyrights="&copy 2015 Copyright Text"
