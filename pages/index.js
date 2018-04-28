@@ -1,8 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout from './Container/Content'
-import Header from "./Components/Header"
+import Header from "../Components/Header"
 import { Slider, Slide, Col, Footer } from "react-materialize"
 const Index = (props) => {
     // console.log(props.children)

@@ -1,45 +1,51 @@
 {
-  "name": "web-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node pages/server.js"
-  },
-  "postcss": {
-    "plugins": {
-      "lost": {},
-      "postcss-easy-import": {
-        "prefix": "_"
-      },
-      "autoprefixer": {},
-      "pixrem": {}
-    }
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "css-loader": "^0.28.11",
-    "express": "^4.16.3",
-    "lost": "^8.2.1",
-    "next": "^5.1.0",
-    "next-images": "^0.10.2",
-    "pixrem": "^4.0.1",
-    "postcss-easy-import": "^3.0.0",
-    "postcss-loader": "^2.1.4",
-    "postcss-url": "^7.3.2",
-    "raw-loader": "^0.5.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-google-maps": "^9.4.5",
-    "react-materialize": "^2.2.0",
-    "react-particles-js": "^2.1.2",
-    "react-redux": "^5.0.7",
-    "react-scroll": "^1.7.9",
-    "redux": "^4.0.0",
-    "redux-thunk": "^2.2.0",
-    "style-loader": "^0.21.0"
-  }
+	"name": "web-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "SET NODE_ENV=production & node server.js"
+	},
+	"postcss": {
+		"plugins": {
+			"lost": {},
+			"postcss-easy-import": {
+				"prefix": "_"
+			},
+			"autoprefixer": {},
+			"pixrem": {}
+		}
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"css-loader": "^0.28.11",
+		"express": "^4.16.3",
+		"lost": "^8.2.1",
+		"next": "^5.1.0",
+		"next-images": "^0.10.2",
+		"pixrem": "^4.0.1",
+		"postcss-easy-import": "^3.0.0",
+		"postcss-loader": "^2.1.4",
+		"postcss-url": "^7.3.2",
+		"raw-loader": "^0.5.1",
+		"react": "^16.3.2",
+		"react-dom": "^16.3.2",
+		"react-google-maps": "^9.4.5",
+		"react-materialize": "^2.2.0",
+		"react-particles-js": "^2.1.2",
+		"react-redux": "^5.0.7",
+		"react-scroll": "^1.7.9",
+		"redux": "^4.0.0",
+		"redux-thunk": "^2.2.0",
+		"style-loader": "^0.21.0"
+	},
+	"devDependencies": {
+		"babel-plugin-inline-import-data-uri": "^1.0.1",
+		"file-loader": "^1.1.11",
+		"image-webpack-loader": "^4.2.0"
+	}
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Layout from "../Container/Content"
-import Index from "../index.js"
+// import Layout from "../Container/Content"
+import Index from "./index.js"
 import { Col, Row } from "react-materialize"
 // function mapStateToProps(state) {
 //     return {
